@@ -1,0 +1,105 @@
+{
+"id": "shell",
+"title": "Main shell",
+"layout": "tabbed",
+"startupBlades": [
+"userBlade"
+],
+"blades": [
+{
+"id": "userBlade",
+"title": "Home - Doctor's office",
+"extensionId": "user_blade",
+"apps": [
+{
+"id": "patientList",
+"extensionId": "patientList",
+"colSpan": 7,
+"title": "Patient list"
+},
+{
+"id": "recent_patient_app",
+"extensionId": "recent_patient_app",
+"colSpan": 3,
+"title": "Recent patients"
+}
+]
+},
+{
+"id": "wikia",
+"title": "Wikia",
+"extensionId": "wikia",
+"apps": null
+},
+{
+"id": "patientBlade",
+"title": "Patient dashboard",
+"extensionId": "patient_blade",
+"apps": [
+{
+"id": "patientDashboard",
+"extensionId": "patientDashboard",
+"colSpan": 10,
+"title": "Dashboard"
+}
+]
+},
+{
+"id": "CustomerCostEstiSWBlade",
+"title": "Customer Cost Estimates SW",
+"extensionId": "CostEstimatesSW",
+"apps": null
+},
+{
+"id": "CustomerCostEstiFIBlade",
+"title": "Customer Cost Estimates FI",
+"extensionId": "CostEstimatesFI",
+"apps": null
+}
+],
+"spheres": [
+"patient_sphere"
+],
+"extensions": [
+{
+"id": "patientList",
+"url": "http://lifecare-his20-sb1-las.hcwtestsaas.local/PAS/Applications/EmergencyPatientList"
+},
+{
+"id": "wikia",
+"url": "https://wikia.service.tieto.com/display/HCWF/Lifecare+Development+Library"
+},
+{
+"id": "patientDashboard",
+"url": "http://lifecare-his20-sb1-las.hcwtestsaas.local/Platform/Applications/Dashboard/#/patientOverview"
+},
+{
+"id": "recent_patient_app",
+"url": "http://lifecare-his20-sb1-las.hcwtestsaas.local/Customership/Applications/patient-sphere/#/recent-patients"
+},
+{
+"id": "patient_sphere",
+"url": "http://lifecare-his20-sb1-las.hcwtestsaas.local/Customership/Applications/Patient-Sphere/#/patient-sphere"
+},
+{
+"id": "patient_blade",
+"url": "http://lifecare-his20-sb1-las.hcwtestsaas.local/Customership/Applications/Patient-Sphere/#/patient-blade"
+},
+{
+"id": "user_blade",
+"url": "http://lifecare-his20-sb1-las.hcwtestsaas.local/Resources/Applications/user-sphere/#/user-blade"
+},
+{
+"id": "user_sphere",
+"url": "http://lifecare-his20-sb1-las.hcwtestsaas.local/Resources/Applications/user-sphere/#/user-sphere"
+},
+{
+"id": "CostEstimatesSW",
+"url": "http://lifecaredental-r3-ver1-las.hcwtestsaas.local/OND/Applications/SWE/CostEstimate/#/"
+},
+{
+"id": "CostEstimatesFI",
+"url": "http://lifecaredental-r3-ver1-las.hcwtestsaas.local/OND/Applications/FIN/CostEstimate/#/"
+}
+]
+}
